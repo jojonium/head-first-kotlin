@@ -7,9 +7,9 @@ fun main() {
     val arraySize2 = wordArray2.size
     val arraySize3 = wordArray3.size
 
-    val rand1 = (Math.random() * arraySize1).toInt()
-    val rand2 = (Math.random() * arraySize2).toInt()
-    val rand3 = (Math.random() * arraySize3).toInt()
+    val rand1 = kotlin.random.Random.nextInt(arraySize1)
+    val rand2 = kotlin.random.Random.nextInt(arraySize2)
+    val rand3 = kotlin.random.Random.nextInt(arraySize3)
 
     val phrase = "${wordArray1[rand1]} ${wordArray2[rand2]} ${wordArray3[rand3]}"
     println(phrase)
